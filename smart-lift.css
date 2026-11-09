@@ -445,7 +445,7 @@
 #smart-lift-sixshop-root table.spec td{color:var(--ink2)}
 #smart-lift-sixshop-root .phot{display:grid;grid-template-columns:1fr 1fr;gap:20px}
 #smart-lift-sixshop-root .phot .pt{background:#fff;border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 6px 20px -10px rgba(140,155,181,.35)}
-#smart-lift-sixshop-root .phot .pt img{width:100%;aspect-ratio:4/3.4;object-fit:cover;object-position:center 30%}
+#smart-lift-sixshop-root .phot .pt img{width:100%;height:auto;display:block}
 #smart-lift-sixshop-root .phot .pt .cap{padding:22px 26px 26px}
 #smart-lift-sixshop-root .phot .pt .cap .tg{font-size:12px;font-weight:800;letter-spacing:.14em;color:var(--accText)}
 #smart-lift-sixshop-root .phot .pt .cap h3{font-size:21px;color:var(--ink);margin:6px 0 10px;letter-spacing:-.02em}
