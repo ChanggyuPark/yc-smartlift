@@ -1,4 +1,3 @@
-/* SMART LIFT v06 | 정부사업 제외 HTML | Sixshop route-scoped landing & UTM5. */
 (()=>{
 'use strict';
 if(window.__ycSmartLiftSixshopLoaded)return;
@@ -47,7 +46,11 @@ function installFeatures(){
   }
   const onClick=e=>{
     const link=e.target.closest('a');if(!link||!root||!root.contains(link))return;
-    if(link.hasAttribute('data-smart-lift-monday')){link.href=getFormUrl();return;}
+    if(link.hasAttribute('data-smart-lift-monday')){
+      link.href=getFormUrl();
+      if (typeof fbq === 'function') fbq('trackCustom', 'SmartLiftFormClick', { content_name: 'Smart Lift 도입 상담 신청' });
+      return;
+    }
     const href=link.getAttribute('href')||'';
     if(href.startsWith('#')&&href.length>1){
       const target=root.querySelector('#'+CSS.escape(href.slice(1)));
